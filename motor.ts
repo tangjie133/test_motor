@@ -176,7 +176,14 @@ namespace motor {
         pins.i2cWriteNumber(I2CADDR, 0x10, NumberFormat.UInt8BE);
         let buf = pins.i2cReadBuffer(I2CADDR, 2, false);
         let value = buf[0] << 8 | buf[1]
-        return value
+
+        value = value  * 3.3 / 4096 * 2
+        value = value * 1000 
+        value = value / 4200 * 100
+        if(value > 100){
+            value =100
+        }
+        return Math.round(value)
     }
 
 }
