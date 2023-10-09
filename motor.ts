@@ -178,12 +178,21 @@ namespace motor {
         let value = buf[0] << 8 | buf[1]
 
         value = value  * 3.3 / 4096 * 2
-        value = value * 1000 
-        value = value / 4200 * 100
-        if(value > 100){
-            value =100
+        value = value * 100 + 10
+        value = Math.round(value)
+        if ((value < 420) && (value > 387)){
+            value = 100
+        } else if ((value <= 387) && (value > 370)){
+            value = 75
+        } else if ((value <= 370) && (value > 355)){
+            value = 50
+        } else if ((value <= 355) && (value > 340)){
+            value = 25
+        }else{
+            value = 0
         }
-        return Math.round(value)
+        
+        return value
     }
 
 }
