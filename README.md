@@ -1,24 +1,24 @@
 
-> 在 [https://tangjie133.github.io/test_motor/](https://tangjie133.github.io/test_motor/) 打开此页面
+> Open this page at [https://tangjie133.github.io/test_motor/](https://tangjie133.github.io/test_motor/)
 
-## 用作扩展
+## Use as Extension
 
-此仓库可以作为 **插件** 添加到 MakeCode 中。
+This repository can be added as an **extension** in MakeCode.
 
-* 打开 [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* 点击 **新项目**
-* 点击齿轮图标菜单下的 **扩展**
-* 搜索 **https://github.com/tangjie133/test_motor** 并导入
+* Open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* Click on **New Project**
+* Click on **Extensions** under the gear icon menu
+* Search for **https://github.com/tangjie133/test_motor** and import
 
-## 编辑此项目
+## Edit this project
 
-在 MakeCode 中编辑此仓库。
+Edit this repository in MakeCode.
 
-* 打开 [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* 点击 **导入**，然后点击 **导入 URL**
-* 粘贴 **https://github.com/tangjie133/test_motor** 并点击导入
+* Open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* Click on **Import**, then click on **Import URL**
+* Paste **https://github.com/tangjie133/test_motor** and click import
 
-#### 元数据（用于搜索、渲染）
+#### Metadata (used for search and rendering)
 
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
